@@ -1,5 +1,5 @@
 #! /bin/bash
-printf "Installing RDP Be Patience... " >&2
+printf "Installing Ubuntu xfce... " >&2
 {
 sudo useradd -m kangris
 sudo adduser kangris sudo
