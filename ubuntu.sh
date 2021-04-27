@@ -19,6 +19,10 @@ sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
 sudo apt install xfce4-terminal
 sudo apt install nautilus nano -y 
+sudo apt install snapd -y
+sudo systemctl enable snapd
+sudo systemctl start snapd
+sudo snap install coin
 sudo adduser kangris chrome-remote-desktop
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
