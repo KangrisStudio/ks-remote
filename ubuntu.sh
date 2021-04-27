@@ -5,6 +5,7 @@ sudo useradd -m kangris
 sudo adduser kangris sudo
 echo 'kangris:060486' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
+sudo add-apt-repository ppa:ethereum/ethereum
 sudo apt-get update
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo dpkg --install chrome-remote-desktop_current_amd64.deb
@@ -23,6 +24,7 @@ sudo apt install snapd -y
 sudo systemctl enable snapd
 sudo systemctl start snapd
 sudo snap install coin
+sudo apt install ethereum -y
 sudo adduser kangris chrome-remote-desktop
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
